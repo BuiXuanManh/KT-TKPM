@@ -1,0 +1,174 @@
+2023-06-15 15:59:33,509 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@79813f66: startup date [Thu Jun 15 15:59:33 ICT 2023]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2023-06-15 15:59:34,114 | INFO  | PListStore:[T:\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2023-06-15 15:59:34,125 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[T:\apache-activemq-5.12.0\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2023-06-15 15:59:34,303 | INFO  | Apache ActiveMQ 5.12.0 (localhost, ID:H31M10-50220-1686819574185-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2023-06-15 15:59:34,335 | INFO  | Listening for connections at: tcp://H31M10:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2023-06-15 15:59:34,335 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2023-06-15 15:59:34,337 | INFO  | Listening for connections at: amqp://H31M10:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2023-06-15 15:59:34,338 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2023-06-15 15:59:34,340 | INFO  | Listening for connections at: stomp://H31M10:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2023-06-15 15:59:34,341 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2023-06-15 15:59:34,343 | INFO  | Listening for connections at: mqtt://H31M10:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2023-06-15 15:59:34,343 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2023-06-15 15:59:34,555 | INFO  | Listening for connections at ws://H31M10:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2023-06-15 15:59:34,556 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2023-06-15 15:59:34,556 | INFO  | Apache ActiveMQ 5.12.0 (localhost, ID:H31M10-50220-1686819574185-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2023-06-15 15:59:34,557 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2023-06-15 15:59:34,557 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: T:\apache-activemq-5.12.0\bin\win64\..\..\data\kahadb only has 50974 mb of usable space - resetting to maximum available disk space: 50974 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2023-06-15 15:59:34,559 | WARN  | Temporary Store limit is 51200 mb, whilst the temporary data directory: T:\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage only has 50974 mb of usable space - resetting to maximum available 50974 mb. | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2023-06-15 15:59:34,774 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2023-06-15 15:59:34,774 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2023-06-15 15:59:34,811 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2023-06-15 15:59:35,035 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2023-06-15 16:02:37,988 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1437756419-55
+org.apache.jasper.JasperException: PWC6033: Unable to compile class for JSP
+
+PWC6199: Generated servlet error:
+The type java.lang.String cannot be resolved. It is indirectly referenced from required .class files
+
+PWC6199: Generated servlet error:
+java.util.Vector cannot be resolved to a type
+
+PWC6199: Generated servlet error:
+_jspx_dependants cannot be resolved
+
+PWC6199: Generated servlet error:
+java.util.Vector cannot be resolved to a type
+
+PWC6199: Generated servlet error:
+_jspx_dependants cannot be resolved
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:123)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:376)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:437)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:360)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:572)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)[file:/T:/apache-activemq-5.12.0/webapps/admin/WEB-INF/classes/:]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.base/java.lang.Thread.run(Thread.java:833)[:]
+2023-06-15 16:02:37,997 | WARN  | /admin/ | org.eclipse.jetty.servlet.ServletHandler | qtp1437756419-55
+org.apache.jasper.JasperException: PWC6033: Unable to compile class for JSP
+
+PWC6199: Generated servlet error:
+The type java.lang.String cannot be resolved. It is indirectly referenced from required .class files
+
+PWC6199: Generated servlet error:
+java.util.Vector cannot be resolved to a type
+
+PWC6199: Generated servlet error:
+_jspx_dependants cannot be resolved
+
+PWC6199: Generated servlet error:
+java.util.Vector cannot be resolved to a type
+
+PWC6199: Generated servlet error:
+_jspx_dependants cannot be resolved
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:123)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:376)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:437)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:360)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)[jsp-2.1-glassfish-2.1.v20100127.jar:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:572)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)[file:/T:/apache-activemq-5.12.0/webapps/admin/WEB-INF/classes/:]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.base/java.lang.Thread.run(Thread.java:833)[:]
