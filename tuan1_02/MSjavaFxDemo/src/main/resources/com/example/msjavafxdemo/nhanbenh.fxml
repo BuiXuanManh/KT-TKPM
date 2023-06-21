@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="8.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="77.0" prefWidth="606.0" text="NHẬN BỆNH">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label prefHeight="46.0" prefWidth="146.0" text="Thông tin bênh nhân">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="37.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="139.0" text="Mã số bệnh nhân:" />
+                  <TextField fx:id="txtMsbn" prefHeight="26.0" prefWidth="350.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <CheckBox fx:id="cbmsbn" mnemonicParsing="false" textFill="#aeaaaa">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin></CheckBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="139.0" text="Số CMND:" />
+                  <TextField fx:id="txtCmnd" prefHeight="26.0" prefWidth="350.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <CheckBox fx:id="cbcmnd" mnemonicParsing="false">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin></CheckBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="139.0" text="Họ và tên:" />
+                  <TextField fx:id="txtHoten" prefHeight="26.0" prefWidth="350.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="81.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="139.0" text="Địa chỉ:" />
+                  <ScrollPane prefHeight="82.0" prefWidth="359.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="txtDiachi" prefHeight="200.0" prefWidth="342.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="600.0">
+               <children>
+                  <Label />
+                  <Pane prefHeight="38.0" prefWidth="585.0">
+                     <children>
+                        <Button fx:id="bntluu" contentDisplay="CENTER" layoutX="141.0" layoutY="9.0" prefHeight="30.0" prefWidth="303.0" text="Lưu thông tin" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,19 +1,30 @@
 package com.example.msjavafxdemo;
 
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class HelloApplication extends Application {
+    private ObservableList<Patient> patientList;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader( HelloApplication.class.getResource( "hello-view.fxml" ) );
-        Scene scene = new Scene( fxmlLoader.load(), 320, 240 );
-        stage.setTitle( "Hello!" );
-        stage.setScene( scene );
+        // Khởi tạo danh sách bệnh nhân
+
+        // Load file FXML cho giao diện Khambenh
+        FXMLLoader khambenhLoader = new FXMLLoader(getClass().getResource("khambenh.fxml"));
+        Parent khambenhRoot = khambenhLoader.load();
+        FXMLLoader nhanbenhLoader = new FXMLLoader(getClass().getResource("nhanbenh.fxml"));
+        Parent nhanbenhRoot = nhanbenhLoader.load();
+        NhanbenhController nhanbenhController = nhanbenhLoader.getController();
+        Scene khambenhScene = new Scene(khambenhRoot);
+        Scene nhanbenhScene = new Scene(nhanbenhRoot);
+        stage.setTitle("Bac si kham benh");
+        stage.setScene(khambenhScene);
         stage.show();
     }
 
