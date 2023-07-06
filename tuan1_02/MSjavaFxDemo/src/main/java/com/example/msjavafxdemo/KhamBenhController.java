@@ -29,29 +29,6 @@ public class KhamBenhController {
 
     @FXML
     private void initialize() {
-        // Kết nối cơ sở dữ liệu
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/khambenh", "root", "");
-
-            // Lấy danh sách bệnh nhân chờ khám từ cơ sở dữ liệu
-            String sql = "SELECT * FROM benh_nhan";
-            PreparedStatement statement = connection.prepareStatement(sql);
-            ResultSet resultSet = statement.executeQuery();
-
-            // Hiển thị danh sách bệnh nhân lên ListView
-            while (resultSet.next()) {
-                String hoTen = resultSet.getString("ho_ten");
-                txtListView.getItems().add(hoTen);
-            }
-
-            // Đóng kết nối
-            resultSet.close();
-            statement.close();
-            connection.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            // Xử lý ngoại lệ và thông báo lỗi nếu cần
-        }
     }
 
     @FXML

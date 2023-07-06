@@ -3,9 +3,7 @@ package com.example.msjavafxdemo.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
 public class Doctor {
-    @Id
     private String msbacsi;
     private String tenbacsi;
 

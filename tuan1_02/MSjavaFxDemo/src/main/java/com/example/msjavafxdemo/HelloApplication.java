@@ -17,17 +17,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     private ObservableList<Patient> patientList;
     @Override
-    public void start(Stage stage) throws IOException {
-        EntityManagerFactory emf= Persistence.createEntityManagerFactory("msjavafxdemo");
-        EntityManager em= emf.createEntityManager();
-        EntityTransaction tr = em.getTransaction();
-        tr.begin();
-        try{
-            tr.commit();
-        }catch (Exception e){
-            e.printStackTrace();
-            tr.rollback();
-        }
+    public void start(Stage stage) throws Exception {
         // Khởi tạo danh sách bệnh nhân
 
         // Load file FXML cho giao diện Khambenh
