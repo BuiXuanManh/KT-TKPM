@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+management:
+  health:
+    circuit-breakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j:
+  circuit-breaker:
+    instances:
+      service1:
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 5s
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+  retry:
+    instances:
+      service1:
+        registerHealthIndicator: true
+        max-attempts: 5
+        waitDuration: 2s
+  rate-limiter:
+    instances:
+      service1:
+        registerHealthIndicator: false
+        limitForPeriod: 3
+        limitRefreshPeriod: 10s
+        timeoutDuration: 3s
